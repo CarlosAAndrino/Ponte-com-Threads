@@ -1,0 +1,16 @@
+package onibus;
+import java.util.ArrayList;
+import java.util.List;
+ 
+public class Onibus {
+    private List<String> poltronas = new ArrayList<>();
+    public synchronized void passagem(Passageiro v) throws InterruptedException{
+        if(!poltronas.contains(v.getName())){
+            System.out.println("Poltrona " + v.getName()+ " foi comprada\n");
+            poltronas.add(v.getName());
+        }else {
+            System.out.println("A poltrona "+ v.getName() + " está ocupada\n");
+        }
+ 
+    }
+}
