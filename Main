@@ -1,0 +1,36 @@
+package onibus;
+ 
+import java.util.ArrayList;
+import java.util.List;
+ 
+public class Main {
+    public static void main(String[] args) {
+       
+ 
+        Onibus onibus = new Onibus();
+        Passageiro v1 = new Passageiro("1", onibus);
+        Passageiro v2 = new Passageiro("1", onibus);
+        Passageiro v3 = new Passageiro("3", onibus);
+        Passageiro v4 = new Passageiro("2", onibus);
+        Passageiro v5 = new Passageiro("5", onibus);
+        Passageiro v6 = new Passageiro("3", onibus);
+        Passageiro v7 = new Passageiro("4", onibus);
+        Passageiro v8 = new Passageiro("10", onibus);
+        Passageiro v9 = new Passageiro("7", onibus);
+        Passageiro v10 = new Passageiro("6", onibus);
+        Passageiro v11 = new Passageiro("2", onibus);
+ 
+        v1.start();
+        v2.start();
+        v3.start();
+        v4.start();
+        v5.start();
+        v6.start();
+        v7.start();;
+        v8.start();
+        v9.start();
+        v10.start();
+        v11.start();
+       
+    }
+}
