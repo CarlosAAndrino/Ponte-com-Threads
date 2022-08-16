@@ -1,0 +1,25 @@
+package onibus;
+ 
+ 
+public class Passageiro extends Thread {
+    Onibus onibus;
+   
+    public Passageiro(String poltrona, Onibus onibus){
+        this.setName(poltrona);
+        this.onibus = onibus;
+    }
+   
+    @Override
+    public void run(){
+        try {
+            onibus.passagem(this);
+        } catch (InterruptedException ex) {
+           
+        }
+    }
+   
+   
+}
+public class x {
+   
+}
